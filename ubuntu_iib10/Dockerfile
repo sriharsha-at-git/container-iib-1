@@ -1,4 +1,4 @@
-FROM ubuntu:base
+FROM ubuntu:14.04
 
 MAINTAINER Sriharsha@inthubss.com
 
