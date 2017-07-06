@@ -2,11 +2,11 @@ echo "ubuntu base image with updates & kernal settings"
 cd ubuntu_base
 docker build --tag ubuntu:base .
 echo "ubuntu with iib10 software installed"
-cd ..\ubuntu_iib10
+cd ../ubuntu_iib10
 docker build -t ubuntu:iibv10 .
 sleep 1
 echo "ubuntu with iib applications deployed"
-cd ..\ubuntu_iib10_app-1
+cd ../ubuntu_iib10_app-1
 docker build -t ubuntu:iib10.app1 .
 sleep 2
 echo "iib apps running as container"
