@@ -27,13 +27,13 @@ docker logs <container_id>
 
 The repo is into 3 directories, 1 each for creating image & finally running the app on container.
 
-# ubuntu_base dir is a simple base verion of ubuntu 14.04 image with kernal settings chnaged to meet IIB server requirements.
+##### ubuntu_base dir is a simple base verion of ubuntu 14.04 image with kernal settings chnaged to meet IIB server requirements.
 
-# ubuntu_iib10 dir is an extension of "ubuntu:base" image(from above) with iib software downloaded & installed
+##### ubuntu_iib10 dir is an extension of "ubuntu:base" image(from above) with iib software downloaded & installed
 
 Note:-  This can && will be used as a base image for any application/service specific containerazition.
 
-# ubuntu_iib10_app-1 is a runnable container with app(s) dpeloyed & security setup.
+##### ubuntu_iib10_app-1 is a runnable container with app(s) dpeloyed & security setup.
 
 If required, for further application to be containered, we could resuse "ubuntu_iib10_app-<n>" directory pattern with target bar files.
 
