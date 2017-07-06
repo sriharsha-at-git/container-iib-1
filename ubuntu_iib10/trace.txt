@@ -1,0 +1,5 @@
+== Info:   Trying 192.168.1.5...
+== Info: TCP_NODELAY set
+== Info: Connected to 192.168.1.5 (192.168.1.5) port 21 (#0)
+== Info: response reading failed
+== Info: Closing connection 0
