@@ -5,13 +5,14 @@ MAINTAINER Sriharsha@inthubss.com
 # Install IIB V10 Developer edition
 
 # use this for local testing
-#RUN mkdir /opt/ibm/ && \
+#RUN  mkdir /opt/ibm/ && \
 #	cd /opt/ibm/ && \
 #    curl ftp://ftpuser:ftpuser@127.0.0.1/10.0.0.8-IIB-LINUX64-DEVELOPER.tar.gz -o /opt/ibm/10.0.0.8-IIB-LINUX64-DEVELOPER.tar.gz && \
 #    tar -zxf /opt/ibm/10.0.0.8-IIB-LINUX64-DEVELOPER.tar.gz --exclude iib-10.0.0.8/tools --directory /opt/ibm && \
 #    /opt/ibm/iib-10.0.0.8/iib make registry global accept license silently
 
-RUN mkdir /opt/ibm && \
+RUN  apt-get install curl tar && \
+    mkdir /opt/ibm && \
     curl http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/integration/10.0.0.8-IIB-LINUX64-DEVELOPER.tar.gz \
     | tar zx --exclude iib-10.0.0.8/tools --directory /opt/ibm && \
     /opt/ibm/iib-10.0.0.8/iib make registry global accept license silently
