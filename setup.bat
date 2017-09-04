@@ -11,7 +11,7 @@ cd ..\ubuntu_iib10_app-1
 docker build -t ubuntu:iib10.app1 .
 pause
 echo "iib apps running as container"
-docker run -d --name iibserver_app_1 -e LICENSE=accept -e NODE_NAME=IIB10NODE -P ubuntu:iib10.app1
+docker run -d --name iibserver_app_1 -e LICENSE=accept -e NODENAME=IIB10NODE -P ubuntu:iib10.app1
 pause
 echo "IIB apps exposed on port numbers..."
 docker port iibserver_app_1
